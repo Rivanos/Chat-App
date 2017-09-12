@@ -42,7 +42,7 @@
             </p>
           <?php endif; ?>
     <?php if (!isset($_SESSION['id'])): ?>
-        <p class="logout"><a data-toggle="modal" data-target="#modalSenregistrer">S'enregister</a></p>
+        <p class="logout"><a class="btn register" data-toggle="modal" data-target="#modalSenregistrer">S'enregister</a></p>
         <!-- Modal -->
             <div class="modal fade" id="modalSenregistrer" role="dialog">
             <div class="modal-dialog">

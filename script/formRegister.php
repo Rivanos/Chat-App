@@ -35,6 +35,19 @@
 		      <input type="file" class="form-control" id="avatar_userRegister" name="avatar_userRegister" placeholder="Avatar" required>
 		    </div>
 		  </div>
+			<div class="form-group barra">
+		    <label for="passwordRegister" class="col-sm-4 control-label">Choissisez votre couleur</label></label>
+		    <div class="col-sm-8">
+					<select id="color" name="color">
+							<option value="red">Red</option>
+							<option value="blue">Blue</option>
+							<option value="yellow">Yellow</option>
+							<option value="green">Green</option>
+							<option value="orange">Orange</option>
+							<option value="purple">Purple</option>
+					</select>
+		    </div>
+		  </div>
 		  <div class="form-group barra">
 		    <div class="col-md-12">
 		      <button type="submit" class="btn center-block">Se connecter</button>

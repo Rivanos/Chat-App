@@ -7,6 +7,7 @@ require 'connection.php';
                     $nb = $dbh->query($sql);
                       while($row = $nb->fetch()){
                           $message = $row['message_message'];
+                          // NOTE: implantation des emoticones :)
                           $message_with_emojis = str_replace(":(", "<img src='assets/images/Emojis/emojis/emo_angry.png' />",$message);
                           $message_with_emojis = str_replace(":/", "<img src='assets/images/Emojis/emojis/emo_sad.png' />",$message_with_emojis);
                           $message_with_emojis = str_replace(";)", "<img src='assets/images/Emojis/emojis/emo_wink.png' />",$message_with_emojis);

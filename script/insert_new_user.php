@@ -9,10 +9,11 @@ if (isset($_POST['pseudoRegister']) & isset($_POST['passwordRegister'])){
 		while($row = $nb_check->fetch()){
 			$users[] = $row['name_user'];
 		}
-	if (isset($_POST['pseudoRegister']) & isset($_POST['passwordRegister'])) {
+	if (isset($_POST['pseudoRegister']) & isset($_POST['passwordRegister']) & isset($_POST['color'])) {
 
 	$pseudo = $_POST['pseudoRegister'];
 	$code_user = $_POST['passwordRegister'];
+	$color = $_POST['color'];
 
 		if (!in_array($pseudo, $users)) {
 			if (isset($_POST['passwordConfirmed'])& $_POST['passwordRegister'] === $_POST['passwordConfirmed']) {
@@ -28,10 +29,10 @@ if (isset($_POST['pseudoRegister']) & isset($_POST['passwordRegister'])){
 								if(move_uploaded_file($_FILES['avatar_userRegister']['tmp_name'], "assets/images/$code_user.$extension")) {
 									$path = "assets/images/$code_user.$extension";
 									echo 'Vous Avez bien été enregistré, veuillez vous connecter à présent.';
-									$dbh->prepare("INSERT INTO user (name_user, password_user, path_avatar_user) VALUES('$pseudo', '$code_user', '$path')")->execute();
+									$dbh->prepare("INSERT INTO user (name_user, password_user, path_avatar_user, color_user) VALUES('$pseudo', '$code_user', '$path', '$color')")->execute();
 								}
 								else {
-									$dbh->prepare("INSERT INTO user (name_user, password_user) VALUES('$pseudo', '$code_user')")->execute();
+									$dbh->prepare("INSERT INTO user (name_user, password_user) VALUES('$pseudo', '$code_user', '$color')")->execute();
 								}
 							}
 							else {
