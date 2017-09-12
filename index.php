@@ -61,11 +61,11 @@
         <input name="message" type="text" id="message" size="63" />
         <input name="message_envoye" type="submit"  id="message_envoye" value="Envoyer"/>
 </div>
+<?php if (isset($_SESSION['id'])): ?>
 <div id="all_users" class="wrapper">
-  <div class="user_box">
     <?php include 'script/all_users.php' ?>
-  </div>
 </div>
+<?php endif; ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/js/confirmedPassword.js"></script>
