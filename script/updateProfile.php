@@ -4,6 +4,12 @@ require 'connection.php';
 if (isset($_SESSION['id'])) {
 $id = $_SESSION['id'];
 }
+if (isset($_SESSION['path'])) {
+$path_now = $_SESSION['path'];
+}
+if (isset($_SESSION['pseudo'])) {
+$pseudo_connected = $_SESSION['pseudo'];
+}
 if (isset($_POST['user_name_edit_profile'])) {
   $users = array();
   $sql_check = "SELECT name_user FROM user";
@@ -31,5 +37,4 @@ if (isset($_POST['color'])) {
   $color_change = $_POST['color'];
   $dbh->prepare('UPDATE user SET color_user= "'.$color_change.'" WHERE id_user = "'.$id.'"')->execute();
 }
-
 ?>

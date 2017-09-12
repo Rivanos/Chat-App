@@ -10,12 +10,19 @@ if (isset($_POST['pseudo']) & isset($_POST['password'])) {
         $nb_checkIn = $dbh->query($sql_checkIn);
         $_SESSION['id'] = $nb_checkIn->fetch()['id_user'];
 
-        if ($_SESSION['id']) {
+        if (isset($_SESSION['id'])) {
                 $pseudo_connected = $_POST['pseudo'];
                 $password_connected = $_POST['password'];
                 $sql_checkIn = "SELECT * FROM user WHERE name_user = '$pseudo_connected' AND password_user = '$password_connected'";
                 $nb_checkIn = $dbh->query($sql_checkIn);
                 $_SESSION['pseudo'] = $nb_checkIn->fetch()['name_user'];
+                if ($_SESSION['id']) {
+                        $pseudo_connected = $_POST['pseudo'];
+                        $password_connected = $_POST['password'];
+                        $sql_checkIn = "SELECT * FROM user WHERE name_user = '$pseudo_connected' AND password_user = '$password_connected'";
+                        $nb_checkIn = $dbh->query($sql_checkIn);
+                        $_SESSION['path'] = $nb_checkIn->fetch()['path_avatar_user'];
+                }
         }
 }
 ?>

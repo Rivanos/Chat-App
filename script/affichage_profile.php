@@ -23,12 +23,13 @@ if (isset($_SESSION['id'])) {
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title"><img class="avatar" src="<?= $row['path_avatar_user'] ?>" />Editer votre profile</h4>
+                                <h3 class="modal-title"><img class="avatar" src="<?= $row['path_avatar_user'] ?>" />Editer votre profile</h3>
                             </div>
                             <div class="modal-body">
-                                <h4>Changer votre avatar</h4>
+                                <?php // NOTE: in progress ?>
+                                <!-- <h4>Changer votre avatar</h4>
                                 <label for="file">Choose a file</label>
-                                <input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" />
+                                <input type="file" name="user_avatar_edit_profile" id="file" class="inputfile" data-multiple-caption="{count} files selected" /> -->
                                  <h4>Changer votre Pseudonyme</h4>
                                 <input id="user_name_edit_profile" type="text" name="user_name_edit_profile" required />
                                 <hr />
