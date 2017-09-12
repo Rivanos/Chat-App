@@ -31,4 +31,5 @@ if (isset($_POST['color'])) {
   $color_change = $_POST['color'];
   $dbh->prepare('UPDATE user SET color_user= "'.$color_change.'" WHERE id_user = "'.$id.'"')->execute();
 }
+
 ?>
