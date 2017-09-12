@@ -1,0 +1,42 @@
+/**Contenedor**/
+.backBlockLogIn{
+  background-color: #2dc7ff;
+  background-repeat:no-repeat;
+  background-size:cover;
+  margin: 15px 15px 15px 15px;
+}
+
+
+/**Head form**/
+
+.logIn{
+    text-align: center;
+	background: #fff;
+	padding: 15px 0 15px 0;
+	font-family: 'Lobster', cursive;
+	color: #000;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px #eee;
+
+}
+
+/**body form**/
+.barra{
+	background: #fff;
+	padding: 15px 0 15px 0;
+	font-family: 'Questrial', sans-serif;
+}
+.form-control :focus{
+	border-color: #66afe9;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+.btn {
+    color: #FFFFFF;
+    background-color: #cfadc9;
+    border-color: rgba(0,0,0,.075);
+    background-image: none !import;
+
+}

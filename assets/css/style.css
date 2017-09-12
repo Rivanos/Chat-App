@@ -1,0 +1,195 @@
+/* CSS Document */
+
+body {
+  font: 12px arial;
+  color: #222;
+  text-align: center;
+  padding: 35px;
+}
+
+form, p, span {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  font: 12px arial;
+}
+
+a {
+  color: #0000FF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.desconnect {
+  border:none;
+	padding:6px 6px;
+	border-radius:8px;
+	background:#d34836;
+	font:bold 13px Arial;
+	color:#fff;
+}
+.wrapper, #loginform {
+  padding-bottom: 25px;
+  background: #EBF4FB;
+  width: 504px;
+  border: 1px solid #ACD8F0;
+  float: left;
+}
+#loginform {
+  padding-top: 18px;
+}
+
+#loginform p {
+  margin: 5px;
+}
+
+#chatbox {
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding: 10px;
+  background: #fff;
+  height: 525px;
+  width: 430px;
+  border: 1px solid #ACD8F0;
+  overflow: auto;
+}
+
+
+#message {
+  width: 395px;
+  border: 1px solid #ACD8F0;
+}
+
+#message_envoyer {
+  width: 60px;
+}
+
+.error {
+  color: #ff0000;
+}
+
+#menu {
+  padding: 12.5px 25px 12.5px 25px;
+}
+
+.welcome {
+  float: left;
+}
+.menu_interact{
+  padding-left: 10px;
+  float: left;
+  font-size: 50px;
+}
+.logout {
+  padding-left: 10px;
+  float: right;
+}
+#menu img {
+  width: 50px;
+  height: 50px;
+}
+
+.msgln {
+  margin: 0 0 2px 0;
+}
+.box-message {
+  width: 100%;
+  border-radius: 10px 10px 10px 10px;
+}
+.text-blue{
+  color:#0000FF
+}
+.text-red{
+  color:#e50000
+}
+.text-orange{
+  color:#ffa500
+}
+.text-yellow{
+  color:#ffff00;
+}
+.text-purple{
+  color:#730073;
+}
+.text-green{
+  color:#007300;
+}
+.blue {
+  border: 1px solid #0000FF;}
+.red{
+  border: 1px solid #e50000;}
+.orange{
+  border: 1px solid #ffa500;}
+.yellow{
+  border: 1px solid #ffff00;}
+.purple{
+  border: 1px solid #730073;}
+.green{
+  border: 1px solid #007300;}
+
+.avatar {
+  width: 25px;
+  height: 25px;
+}
+.message {
+  line-height:25px;
+  font-size: 18px;
+}
+.flotte{
+  float: left;
+}
+.alerteFailure {
+  background-color: #ff6666;
+  border: 3px solid #ff0000;
+  padding: 10px 10px;
+  margin-bottom: 30px;
+  width: auto;
+  font-size: 30px;
+}
+.alerteNonFailure {
+  background-color: #329932;
+  border: 3px solid #00cd00;
+  padding: 10px 10px;
+  margin-bottom: 30px;
+  width: auto;
+  font-size: 30px;
+}
+.alerteFailureLogIn {
+  background-color: #ff6666;
+  border: 3px solid #ff0000;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  width: auto;
+  font-size: 15px;
+}
+.alerteNonFailureLogIn {
+  background-color: #329932;
+  border: 3px solid #00cd00;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  width: auto;
+  font-size: 15px;
+}
+.block {
+  border: 1px solid blue;
+}
+.right{
+  float: right
+}
+.file{
+  text-align: right;
+}
+#all_users{
+  width: 200px;
+  padding: 10px 10px;
+  height: auto;
+}
+.user_box{
+  background-color: white;
+  border: 
+}
