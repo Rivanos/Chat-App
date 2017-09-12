@@ -63,7 +63,7 @@
 </div>
 <div id="all_users" class="wrapper">
   <div class="user_box">
-    bonjour je vais afficher tous les utilisateurs :)
+    <?php include 'script/all_users.php' ?>
   </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script></script>
