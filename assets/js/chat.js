@@ -36,4 +36,6 @@ $('#btn_edit').on('click', function(){
       $("#chatbox").html(server_response);
     }
   });
-})
+});
+element = document.getElementById('chatbox');
+element.scrollTop = element.scrollHeight;

@@ -13,7 +13,7 @@ if (isset($_SESSION['id'])) {
         $nb = $dbh->query($sql);
         while($row = $nb->fetch()){ ?>
             <p class="menu_interact"><a id="profile" data-toggle="modal" data-target="#modalPorfile"><img class="avatar" src="<?= $row['path_avatar_user'] ?>" /></a></p>
-            <p class="menu_interact text-<?= $row['color_user'] ?>"><?= $row['name_user']?></p>
+            <p class="menu_interact" style="color:<?= $row['color_user'] ?>"><?= $row['name_user']?></p>
 
             <div id="modalPorfile" class="modal fade" role="dialog">
                 <div class="modal-dialog modal-sm">
@@ -28,7 +28,7 @@ if (isset($_SESSION['id'])) {
                             <div class="modal-body">
                                 <?php // NOTE: in progress ?>
                                 <!-- <h4>Changer votre avatar</h4>
-                                <label for="file">Choose a file</label>
+                                <label id="file_update" for="file">Choose a file</label>
                                 <input type="file" name="user_avatar_edit_profile" id="file" class="inputfile" data-multiple-caption="{count} files selected" /> -->
                                  <h4>Changer votre Pseudonyme</h4>
                                 <input id="user_name_edit_profile" type="text" name="user_name_edit_profile" required />
@@ -38,14 +38,9 @@ if (isset($_SESSION['id'])) {
                                 <input id="user_pwd_edit_profile" type="text" name="user_pwd_edit_profile" required placeholder="Nouveau mot de passe" />
                                 <hr />
                                 <h4>Changer la couleur de votre pseudo</h4>
-                                <select id="color" name="color">
-                                    <option value="red">Red</option>
-                                    <option value="blue">Blue</option>
-                                    <option value="yellow">Yellow</option>
-                                    <option value="green">Green</option>
-                                    <option value="orange">Orange</option>
-                                    <option value="purple">Purple</option>
-                                </select>
+                                <div id="picker"></div>
+                                <div id="slide"></div>
+                      			<input id="color_background" type="hidden" name="color" value="">
                             </div>
                             <div class="modal-footer">
                                 <button id="btn_edit" type="submit" class="btn btn-default">Appliquer les changements</button>

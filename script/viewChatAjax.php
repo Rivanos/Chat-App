@@ -18,7 +18,7 @@ require 'connection.php';
                           echo '
                           <div class="box-message">
                             <p class="flotte"><img class="avatar" src="'.$row['path_avatar_user'].'" /></p>
-                            <p class="message text-'.$row['color_user'].'">'.$row['name_user'].' : '.$message_with_emojis.'</p>
+                            <p class="message" style="color:'.$row['color_user'].'">'.$row['name_user'].' : '.$message_with_emojis.'</p>
                           </div>';
                       }
 ?>

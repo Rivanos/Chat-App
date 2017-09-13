@@ -38,14 +38,9 @@
 			<div class="form-group barra">
 		    <label for="passwordRegister" class="col-sm-4 control-label">Choissisez votre couleur</label></label>
 		    <div class="col-sm-8">
-					<select id="color" name="color">
-							<option value="red">Red</option>
-							<option value="blue">Blue</option>
-							<option value="yellow">Yellow</option>
-							<option value="green">Green</option>
-							<option value="orange">Orange</option>
-							<option value="purple">Purple</option>
-					</select>
+					<div id="picker"></div>
+          <div id="slide"></div>
+					<input id="color_background" type="hidden" name="color" value="">
 		    </div>
 		  </div>
 		  <div class="form-group barra">
